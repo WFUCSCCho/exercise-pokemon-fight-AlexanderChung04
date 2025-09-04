@@ -84,5 +84,7 @@ public class Pokemon implements Comparable <Pokemon> {
     public boolean isLegendary() {
         return legendary;
     }
+
+
 }
 
