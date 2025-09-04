@@ -4,7 +4,7 @@ import java.util.*;
 
 public class PokemonFight {
 
-    public static int fight(ArrayList<Pokemon> arr, Comparator<Pokemon> c, int first, int second) {
+    public static int fight(LinkedList<Pokemon> arr, Comparator<Pokemon> c, int first, int second) {
         return c.compare(arr.get(first), arr.get(second));
     }
 
@@ -27,9 +27,9 @@ public class PokemonFight {
         inputFileNameScanner.nextLine();
 
         // Pokemon ArrayList (PokeDex)
-        ArrayList<Pokemon> PokeDex = new ArrayList<Pokemon>();
+        LinkedList<Pokemon> PokeDex = new LinkedList<Pokemon>();
 
-        // Read in file and store data in Pokemon ArrayList
+        // Read in file and store data in Pokemon LinkedList
         while (inputFileNameScanner.hasNext()) {
             String line = inputFileNameScanner.nextLine();
             String[] parts = line.split(",");
